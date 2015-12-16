@@ -454,3 +454,5 @@ Storage files: (filename : modification date - size)
 2015-12-16 05:04:05.442+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob]: Sampled index :User(number) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
 2015-12-16 05:04:55.442+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob]: Sampled index :User(uuid) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
 2015-12-16 05:05:05.443+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob]: Sampled index :User(number) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
+2015-12-16 05:11:45.439+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob]: Sampled index :User(uuid) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
+2015-12-16 05:11:55.443+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob]: Sampled index :User(number) with 6 unique values in sample of avg size 6 taken from index containing 6 entries

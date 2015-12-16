@@ -1,28 +1,41 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Code Challenge Dec 15 2015 by Ricky Gu
 
-Things you may want to cover:
+*Challenge*
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Given a csv in the form of:
+ 
+    user_a_id, user_b_id
+ 
+Write a ruby script that will connect to Neo4J and create a bidirectional relationship between two nodes with those ids.
+ 
+If either node already exists it should be found for the new relationship.
+ 
+The script should be able to handle problems and generate a list of exceptions while still completing.
+ 
+The input will sometimes contain non numeric characters, these should be exceptions and not be inserted.
+ 
+Performance and parallelism should be considered as the test data will be millions of rows.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+*Solution*
+
+Implementation: Ruby on Rails, Neo4j gem, TDD Rspec
+
+Completion time: 2.5 hours (including learning Neo4J and 30 minute meal)
+
+To run:
+    bundle install
+    rake neo4j:start
+    rake neo4j:start[test,7475]
+    rspec spec
+    
+Data imported from db/data.csv
+Data import log: db/import_log.txt
+
+Main files of interest:
+app/models/user.rb
+spec/models/user_spec.rb
+
+
