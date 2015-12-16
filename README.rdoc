@@ -31,11 +31,13 @@ To run:
     rake neo4j:start[test,7475]
     rspec spec
     
-Data imported from db/data.csv
+Data import from db/data.csv
+
 Data import log: db/import_log.txt
 
 Main files of interest:
-app/models/user.rb
-spec/models/user_spec.rb
+
+    app/models/user.rb
+    spec/models/user_spec.rb
 
 
