@@ -361,3 +361,4 @@ Storage files: (filename : modification date - size)
 2015-12-16 02:52:55.117+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob]: Sampled index :User(number) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
 2015-12-16 03:00:55.121+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob]: Sampled index :User(uuid) with 8 unique values in sample of avg size 8 taken from index containing 8 entries
 2015-12-16 03:01:05.119+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob]: Sampled index :User(number) with 4 unique values in sample of avg size 4 taken from index containing 4 entries
+2015-12-16 04:16:29.040+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 274ms.

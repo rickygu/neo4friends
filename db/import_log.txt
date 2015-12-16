@@ -1,0 +1,6 @@
+User 1 befriended User 2
+User 3 befriended User 4
+User 5 befriended User 6
+Error: Friendship already exist, User 2, User 1
+Error: Number is not a number, User abc, User efg
+Error: Number is not a number, User 3, User asd

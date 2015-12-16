@@ -30,7 +30,7 @@ RSpec.describe User, type: :model do
     expect(user2.friends.count).to eq 1
   end
   
-  it "cannot add another user as friend twice" do
+  it "cannot add another user as friend twice silently" do
     user = User.create number: 1
     user2 = User.create number: 2
     user.make_friends user2
@@ -39,6 +39,13 @@ RSpec.describe User, type: :model do
     user.make_friends user2
     expect(user.friends.count).to eq 1
     expect(user2.friends.count).to eq 1
+  end
+  
+  it "can throw exception if friendship already exist" do
+    user = User.create number: 1
+    user2 = User.create number: 2
+    user.make_friends! user2
+    expect{user.make_friends! user2}.to raise_error("Friendship already exist")
   end
   
   it "cannot add another user back as friend once friended" do
@@ -50,6 +57,11 @@ RSpec.describe User, type: :model do
     user2.make_friends user
     expect(user.friends.count).to eq 1
     expect(user2.friends.count).to eq 1
+  end
+  
+  it "can import from CSV file" do
+    User.import
+    
   end
   
 end
