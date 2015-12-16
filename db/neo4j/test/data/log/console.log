@@ -1,0 +1,19 @@
+2015-12-16 03:15:23.454+0000 INFO  [API] Setting startup timeout to: 120000ms based on 120000
+2015-12-16 03:15:27.040+0000 INFO  [API] Successfully started database
+2015-12-16 03:15:27.158+0000 INFO  [API] Starting HTTP on port :7475 with 4 threads available
+19:15:27.595 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @6410ms
+2015-12-16 03:15:27.700+0000 INFO  [API] Mounting static content at [/webadmin] from [webadmin-html]
+2015-12-16 03:15:27.786+0000 INFO  [API] Mounting static content at [/browser] from [browser]
+19:15:27.793 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.4.v20141103
+19:15:27.824 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.h.MovedContextHandler@780aca5a{/,null,AVAILABLE}
+19:15:27.973 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /webadmin, did not find org.apache.jasper.servlet.JspServlet
+19:15:27.996 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@7f878bae{/webadmin,jar:file:/Users/MacbookAir/Rails/neo4friends/db/neo4j/test/system/lib/neo4j-server-2.2.7-static-web.jar!/webadmin-html,AVAILABLE}
+19:15:28.788 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@73b938e9{/db/manage,null,AVAILABLE}
+19:15:29.208 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@58e9958b{/db/data,null,AVAILABLE}
+19:15:29.235 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /browser, did not find org.apache.jasper.servlet.JspServlet
+19:15:29.238 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@7af3f829{/browser,jar:file:/Users/MacbookAir/Rails/neo4friends/db/neo4j/test/system/lib/neo4j-browser-2.2.7.jar!/browser,AVAILABLE}
+19:15:29.463 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@399050c3{/,null,AVAILABLE}
+19:15:29.516 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@4c12f424{HTTP/1.1}{localhost:7475}
+19:15:29.516 [main] INFO  org.eclipse.jetty.server.Server - Started @8340ms
+2015-12-16 03:15:29.517+0000 INFO  [API] Server started on: http://localhost:7475/
+2015-12-16 03:15:29.517+0000 INFO  [API] Remote interface ready and available at [http://localhost:7475/]
